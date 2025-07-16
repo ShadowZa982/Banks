@@ -1,0 +1,8 @@
+interest-rate: 10
+loan-time: 24 # Thời gian vay tính bằng giờ
+max-loan: 100000
+
+interest-rates:
+  3: 0.01
+  6: 0.015
+  12: 0.02 # Lãi suất % mỗi 24 giờ

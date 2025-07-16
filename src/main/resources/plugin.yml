@@ -1,0 +1,26 @@
+name: Bank
+version: '1.0'
+main: org.kalistudio.kBank.KBank
+api-version: '1.21'
+load: STARTUP
+authors: [ Kali Studio ]
+softdepend: [PlaceholderAPI]
+
+commands:
+  bank:
+    description: Mở giao diện ngân hàng hoặc kiểm tra khoản vay
+    usage: /bank <args>
+    aliases: [ ]
+    permission: kbank.use
+    permission-message: Bạn không có quyền sử dụng lệnh này!
+
+  ck:
+    description: Chuyển khoản đến người chơi khác
+    usage: /ck <số tài khoản> <số tiền>
+    permission: kbank.transfer
+
+  kbank:
+    description: Lệnh dành cho Admin
+    usage: /kbank reload | loans
+    permission: kbank.admin
+    permission-message: Bạn không có quyền sử dụng lệnh này!

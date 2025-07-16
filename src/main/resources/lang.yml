@@ -1,0 +1,67 @@
+prefix: "&6[&eKBank&6] "
+
+no-permission: "&cBạn không có quyền thực hiện lệnh này!"
+reload-success: "&a✔ Đã reload plugin thành công."
+not-number: "&cVui lòng nhập một con số hợp lệ!"
+input-cancelled: "&cĐã huỷ thao tác."
+
+gui:
+  title: "&b☁ Ngân hàng cá nhân"
+  deposit-money: "&a✔ Đã gửi &e$%amount% &avào ngân hàng."
+  withdraw-money: "&a✔ Đã rút &e$%amount% &atừ ngân hàng."
+  not-enough-money: "&cKhông đủ tiền!"
+  current-balance: "&7• Tiền: &a$%money%"
+  already-loan: "&cBạn đã có khoản vay!"
+  loan-success: "&e✔ Đã vay &e$%amount% &evới tổng trả &c$%total%."
+  loan-failed: "&cKhông đủ tiền trả khoản vay! Còn thiếu &e$%missing%."
+
+menu:
+  bank:
+    title: "&c&l☁ Ngân hàng Nhà trồng"
+
+    deposit:
+      name: "&aGửi tiền 💰"
+      lore: "&7Click để gửi"
+      model: 1001
+      material: "EMERALD"
+
+    saving:
+      name: "&d💰 Gửi tiết kiệm"
+      lore:
+        - "&7Gửi tiền vào ngân hàng để sinh lời"
+        - "&fChọn thời hạn: 3, 6, 12 tháng"
+      material: CLOCK
+      model: 0
+
+    withdraw:
+      name: "&cRút tiền 💸"
+      lore: "&7Click để rút"
+      model: 1001
+      material: "EMERALD"
+
+    loan:
+      name: "&eVay tiền 🏦"
+      lore: "&7Click để vay"
+      model: 1001
+      material: "EMERALD"
+
+    info:
+      name: "   &fThông tin tài khoản"
+      lore:
+        - "&7Chủ tài khoản: &f{player}"
+        - "&7STK: &f{account}"
+        - "&7Ngày tạo: &f{created}"
+        - ""
+        - "&6💰 Số dư: &a{bank_money}"
+        - "&6🏦 Gửi tiết kiệm: &b{saving}"
+        - "&6⏳ Hạn rút: &d{saving_due}"
+        - ""
+        - "&c💳 Khoản vay: &f{loan}"
+        - "&c🕐 Hạn trả: &f{due}"
+        - "&f   Ngân hàng VietUker"
+      model: 1004
+      material: "EMERALD"
+
+anvil:
+  input-title: "Nhập số tiền"
+  error: "Chỉ nhập số!"
